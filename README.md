@@ -80,6 +80,5 @@ the dashboard is available through the forwarded Codespaces port:
 
 Port: 8501
 
-If a deployed dashboard URL is provided separately, it can be added here:
 
 Dashboard: http://localhost:8501
