@@ -1,35 +1,22 @@
 # TechnicalTeiko
-Repository Structure
-.
-├── cell-count.csv          # Supplied input dataset
-├── load_data.py            # Creates and populates the SQLite database
-├── analysis.py             # Data queries and statistical analysis
-├── dashboard.py            # Interactive Streamlit dashboard
-├── requirements.txt        # Python dependencies
-├── Makefile                # Setup, pipeline, and dashboard commands
-├── README.md
-└── .gitignore
-
-The SQLite database and analysis outputs are generated when the pipeline is run and are not required to be committed to the repository.
-
 
 ### Requirements
 Required software to run in GitHub Codespaces: Python 3, pip, make
 
 ### Setup
 Install all required Python dependencies by running:
-
+```bash
 make setup
-
+```
 
 This installs the packages listed in requirements.txt.
 
 ### Run the Data Pipeline
 
 Run:
-
+```bash
 make pipeline
-
+```
 
 This executes the data pipeline from start to finish.
 
@@ -50,9 +37,9 @@ The pipeline:
 ### Run the Dashboard
 
 Start the interactive dashboard with:
-
+```bash
 make dashboard
-
+```
 
 The dashboard runs on port 8501.
 
@@ -64,10 +51,11 @@ After running make dashboard, open the forwarded port 8501 in GitHub Codespaces 
 
 To reproduce the complete analysis in a fresh environment:
 
+```bash
 make setup
 make pipeline
 make dashboard
-
+```
 
 Then open the forwarded port 8501 in GitHub Codespaces.
 
@@ -84,9 +72,9 @@ A corrected p-value below 0.05 is considered statistically significant.
 ### Dashboard Link
 
 After launching the dashboard with:
-
+```bash
 make dashboard
-
+```
 
 the dashboard is available through the forwarded Codespaces port:
 
